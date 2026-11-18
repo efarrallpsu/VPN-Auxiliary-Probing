@@ -2,13 +2,14 @@
 
 Auxiliary TLS/HTTP/rDNS fingerprinting for VPN protocol classification on port 443.
 
-This is the minimal code-only repository for the v2 work. Generated feature
-tables, models, plots, and the report notebook are intentionally not committed;
+This repository contains the v2 build/tuning code and the executed report
+notebook. Generated feature tables, models, metrics, and plots are not committed;
 they are recreated by the scripts below.
 
 ## Contents
 
 - `tls_protocol_classification.ipynb` — original V1 notebook.
+- `tls_protocol_classification_v2.ipynb` — executed v2 summary/report notebook.
 - `tls_clf_splits/*.csv.gz` — frozen grouped 70/20/10 split tables.
 - `scripts/TLS/tls_clf_v2_build.py` — rebuilds the v2 feature table from the raw
   VPN ecosystem scans.
